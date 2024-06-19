@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assem1">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.000117580106310578 -0.109999999999991 0.00170491154150406"
+        rpy="0 0 0" />
+      <mass
+        value="0.099112837613348" />
+      <inertia
+        ixx="2.37750457828881E-05"
+        ixy="-3.83863503012889E-21"
+        ixz="2.84343335565103E-21"
+        iyy="0.00010269070599238"
+        iyz="-2.82849564826259E-22"
+        izz="8.54854281591431E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel_1">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 -1.38777878078145E-17 0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.0125663706143592" />
+      <inertia
+        ixx="1.36135681655557E-06"
+        ixy="0"
+        ixz="2.38525282388307E-23"
+        iyy="1.36135681655558E-06"
+        iyz="-7.33867931534528E-24"
+        izz="2.51327412287183E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/wheel_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/wheel_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_1_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0298824198936894 -0.109999999999991 -0.0232950884584959"
+      rpy="-3.14159265358979 0 -2.6546719690692" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_2">
+    <inertial>
+      <origin
+        xyz="0 -1.38777878078145E-17 0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.0125663706143592" />
+      <inertia
+        ixx="1.36135681655558E-06"
+        ixy="1.58818677610181E-22"
+        ixz="-5.80916764838295E-24"
+        iyy="1.36135681655558E-06"
+        iyz="1.46732097561138E-23"
+        izz="2.51327412287183E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/wheel_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/wheel_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_2_joint"
+    type="continuous">
+    <origin
+      xyz="0.0301175801063106 -0.109999999999991 -0.0232950884584959"
+      rpy="-3.14159265358979 0 -2.46508337839107" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_3">
+    <inertial>
+      <origin
+        xyz="4.16333634234434E-17 6.93889390390723E-18 0.00499999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="0.0125663706143592" />
+      <inertia
+        ixx="1.36135681655558E-06"
+        ixy="0"
+        ixz="-4.94852127834538E-22"
+        iyy="1.36135681655558E-06"
+        iyz="-4.31077259866146E-22"
+        izz="2.51327412287183E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/wheel_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/wheel_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_3_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0298824198936894 -0.109999999999991 0.0267049115415041"
+      rpy="0 0 1.66909505300862" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_4">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 -1.38777878078145E-17 0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.0125663706143592" />
+      <inertia
+        ixx="1.36135681655558E-06"
+        ixy="2.64697796016969E-23"
+        ixz="-7.99720186791675E-22"
+        iyy="1.36135681655558E-06"
+        iyz="-7.46281662411181E-22"
+        izz="2.51327412287183E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/wheel_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem1/meshes/wheel_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_4_joint"
+    type="continuous">
+    <origin
+      xyz="0.0301175801063106 -0.109999999999991 0.0267049115415041"
+      rpy="0 0 1.43246122541785" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
